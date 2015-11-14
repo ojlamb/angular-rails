@@ -8,7 +8,7 @@ class PostsController < ApplicationController
   end
 
   def show
-    repsond_with Post.find(params[:id])
+    respond_with Post.find(params[:id])
   end
 
   def upvote
@@ -19,6 +19,7 @@ class PostsController < ApplicationController
   end
 
   private
+
   def post_params
     params.require(:post).permit(:link, :title)
   end

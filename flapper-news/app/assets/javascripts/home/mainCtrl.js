@@ -2,7 +2,7 @@ angular.module('flapperNews').controller('MainCtrl', ['$scope', 'posts', functio
   $scope.posts = posts.posts;
 
   $scope.addPost = function(){
-    if(!$scope.title || $scope.title === '') { return; }
+  if(!$scope.title || $scope.title === '') { return; }
     posts.create({
       title: $scope.title,
       link: $scope.link,
