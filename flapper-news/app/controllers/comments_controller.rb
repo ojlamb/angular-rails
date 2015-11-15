@@ -12,6 +12,7 @@ class CommentsController < ApplicationController
 
     respond_with post, comment
   end
+  
 
   private
   def comment_params
